@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "PixeloidMono";
+    src: url(Fonts/PixeloidMono-d94EV.ttf);
+}
+
+@font-face {
+    font-family: "PixeloidSans";
+    src: url(Fonts/PixeloidSans-mLxMm.ttf);
+}
+
+@font-face {
+    font-family: "PixeloidSansBold";
+    src: url(Fonts/PixeloidSansBold-PKnYd.ttf);
+}
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+div {
+    width: 400px;
+    word-wrap: break-word;
+}
+
+.highres_ss {
+    width: 75%;
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: linear-gradient(black, rgb(0, 71, 14));
+    top: 0;
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+li a:hover {
+    background-color: #111;
+  }
+
+.active {
+    background-color: linear-gradient(black, rgb(0, 71, 14));
+  }

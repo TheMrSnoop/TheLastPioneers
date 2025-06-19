@@ -1,0 +1,1155 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+@font-face {
+    font-family: "PixeloidMono";
+    src: url(..Fonts/PixeloidMono-d94EV.ttf);
+}
+
+@font-face {
+    font-family: "PixeloidSans";
+    src: url(../Fonts/PixeloidSans-mLxMm.ttf);
+}
+
+@font-face {
+    font-family: "PixeloidSansBold";
+    src: url(../Fonts/PixeloidSansBold-PKnYd.ttf);
+}
+
+@font-face {
+  font-family: "Lexend";
+  src: url(../Fonts/Lexend.ttf);
+}
+
+@font-face {
+  font-family: "LexendThin";
+  src: url(../Fonts/LexendThin.ttf);
+}
+
+@font-face {
+  font-family: "LexendBold";
+  src: url(../Fonts/LexendBold.ttf);
+}
+
+@font-face {
+  font-family: "Anurati";
+  src: url(../Fonts/Anurati-Regular.otf);
+}
+
+@font-face {
+  font-family: "Boldonse";
+  src: url(../Fonts/Boldonse-Regular.ttf);
+}
+
+
+@font-face {
+  font-family: "NASA-Font";
+  src: url(../Fonts/NasaFont.otf);
+}
+
+
+@font-face {
+  font-family: "Geo";
+  src: url(../Fonts/Geo-Regular.ttf);
+}
+
+@font-face {
+  font-family: Righteous;
+  src: url(../Fonts/Righteous-Regular.ttf);
+}
+
+/*--ANIMATIONS--*/
+
+@keyframes FadeLogo {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+.Logo {
+  animation-name: FadeLogo;
+  animation-duration: 5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@keyframes FadeImage {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.FadeImage {
+  animation-name: FadeImage;
+  animation-duration: 5s;
+}
+
+
+
+.fadein {
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+  position: relative;
+}
+
+.fadein img {
+  -webkit-animation-name: fade;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 28s;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  33% {opacity: 1;}
+  53% {opacity: 0;}
+  100% {opacity: 0;}
+}
+@keyframes fade {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  33% {opacity: 1;}
+  53% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+#f1 {
+  background-color: lightblue;
+  
+
+}
+#f2 {
+  animation-delay: -16s;
+}
+
+#f3 {
+  animation-delay: -8s;
+}
+
+#f4 {
+  animation-delay: -4s;
+}
+
+
+
+@keyframes ToGrey
+{
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 75%;
+  }
+  
+}
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+
+@keyframes slideLeft
+{
+  from {
+    padding-left: 100%;
+    opacity: 0%;
+  }
+  to 
+  {
+    padding-left: 39%;
+    opacity: 100%;
+  }
+}
+
+
+
+
+.Index_CoverImage
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    box-shadow: black 6px 6px 6px;
+}
+
+
+.center {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.Buttoncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+  }
+
+.btn {
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 1px solid #333333;
+  }
+  
+
+
+a
+{
+  cursor: url(..Images/WebsiteCursorHOVER.png), pointer;
+}
+
+div {
+    width: 400px;
+    word-wrap: break-word;
+}
+
+h2 {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+h5 {
+    padding-left: 10%;
+    padding-right: 30%;
+}
+
+p {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+
+}
+  
+ul li {
+    float: left;
+    font-size: 21px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: auto;
+    font-weight: 1000;
+}
+  
+
+
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    font-family: Righteous;
+    font-weight: 500;
+}
+  
+
+ul li a:hover {
+    animation: ToGrey 0.1s ease-in forwards;
+
+}
+
+
+/* The Normal Devlog List Items Style */
+ol li a
+{
+  color: #b0001a;
+  font-family: Lexend;
+}
+
+
+
+.NavBarItemUnderline
+{
+  display: block;
+  width: 0%;
+  height: 1px;  
+  background-color: #b0001a;
+  transition: width 0.2s ease-in-out;
+  margin-top: 10%;
+}
+
+
+li:hover .NavBarItemUnderline
+{
+  float: left;
+  width: 100%;
+}
+
+li:not(:hover) .NavBarItemUnderline
+{
+  float: right;
+  width: 0%;
+}
+.selected
+{
+  font-weight: bold;
+}
+
+
+table
+{
+  margin-top: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0%;
+  background-color: black;
+}
+
+th
+{
+  font-size: 48px;
+  text-align: center;
+
+}
+
+td
+{
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.titleText {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+  display: block;
+  height: 6px;
+  border: 0;
+  border-top: 3px solid #b0001a;
+  margin: 0 5% 0 5%;
+  padding: 0;
+}
+
+.wrap {
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #DEE8E7;
+}
+
+
+
+
+#rcorners1 {
+  border: 8px solid #DEE8E7;
+  border-radius:100%;
+  overflow:hidden;
+  margin: 3% 10% 3% 10%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  cursor: url(../Images/WebsiteCursor.png), auto;
+}
+
+
+
+
+#NMS_notice
+{
+  padding: 0 0 1% 15.25%;
+  margin: 0;
+}
+
+.AboutText
+{
+  float: right;
+}
+
+#AboutH1
+{
+  color: #DEE8E7;
+  font-size: 64px;
+}
+
+#AboutDesc1
+{
+
+  color: #DEE8E7;
+  padding-right: 30%;
+}
+
+
+
+footer h5
+{
+  text-align: center;
+  padding: 1% 0 1% 0;
+  margin: 0;
+  font-family: LexendThin;
+  color: white;
+}
+
+
+.TitleImage
+{
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #DEE8E7;
+  margin-top: 10%;
+}
+
+
+div.scroll-container {
+  background-color: #161616;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  width: 100%;
+  border: dotted white;
+}
+
+div.scroll-container img {
+  padding: 1%;
+  width: 30%;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.Index
+{
+  color: white; 
+  font-family: LexendThin; 
+  background-color: #040404;
+}
+
+.Builds
+{
+  color: white; 
+  font-family: LexendThin; 
+  background-image: linear-gradient(#040404, black)
+}
+
+.Devlog
+{
+  color: white; 
+  font-family: Lexend; 
+  background-image: linear-gradient(#040404, black)
+}
+
+
+.Gallery
+{
+  color: white; 
+  font-family: Lexend; 
+  background-image: linear-gradient(#161616, black)
+}
+
+
+.Dev
+{
+  color: white; 
+  font-family: Lexend; 
+  background-image: linear-gradient(#0c0c0c, black)
+}
+
+.devlogList
+{
+  list-style-type: circle;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.mobile_devlogList
+{
+  list-style-type: circle;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 12px;
+}
+
+.mobile_devlogList img
+{
+  width: 100%;
+}
+
+
+.devlogList li
+{
+  font-family: LexendThin;
+}
+
+.devlogList img
+{
+  width: 100%;
+  margin-top: 5%;
+  box-shadow: black 3px 3px 3px;
+}
+
+.DevVersionHeader
+{
+  text-align: center;
+  font-family: "LexendThin";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+Devlog main section
+{
+  border: 8px solid #DEE8E7;
+}
+
+#buildText
+{
+  font-family: LexendBold;
+  font-size: 32px;
+  text-align: center;
+}
+
+h1 a
+{
+  color: wheat;
+  
+}
+
+#buildParagraph
+{
+  font-family: LexendThin;
+  text-align: center;
+}
+
+.BuildImage
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 50%;
+  border: 3px solid white;
+}
+
+.BuildImage
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid white;
+}
+
+.BuildVideo
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white;
+  width: 560;
+  height: 315;
+}
+
+Index h2
+{
+  font-family: Lexend;
+}
+
+
+.AboutGameBackground {
+
+  background-image: url(../Images/americanflag.png);
+
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+
+  height: 100%;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Keypoint_Container
+{
+  width: 100%;
+  display: flex;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  justify-content: center;
+}
+
+.Keypoint_Image
+{
+  width: 60%;
+  float: right;
+  padding: 10px;
+  box-shadow: black 8px 8px 8px;
+}
+
+.Keypoint_Container img
+{
+  width: 100%;
+  border: 3px black solid;
+  object-fit: cover;
+}
+
+.Keypoint_Textcontent
+{
+  box-shadow: black 8px 8px 8px;
+  border: 3px black solid;
+  margin-top: 10px;
+  width: 30%;
+}
+
+.Keypoint_Textcontent h1
+{
+  font-size: 32px;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 5%;
+  font-family: "Boldonse";
+  color: #b0001a;
+}
+
+.Keypoint_Textcontent p
+{
+  font-size: 24px;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: Geo;
+  color: #b0001a;
+}
+
+.AboutGame
+{
+  background-image: url(../Images/EarthOrbit_1440pBLURED.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+
+#AboutGameHeading
+{
+  font-family: Lexend;
+  padding: 0 5%;
+  margin: 0;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+#AboutGameText
+{
+  font-family: LexendThin;
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+}
+
+
+.KeyFeaturesOL
+{
+  list-style-type: circle;
+  padding-left: 31%;
+  padding-right: 30%;
+}
+
+KeyFeaturesOL li
+{
+  font-family: LexendThin;
+
+}
+
+
+.Socials
+{
+  background-image: url(../Images/O2TanksBLURED.png);
+  font-family: LexendThin;
+  color: white;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#SocialsH1
+{
+  font-size: 64px;
+  text-align: center;
+  padding: 2% 10% 2% 10%;
+}
+
+.SocialsSection
+{
+  margin: 0 30% 0 30%;
+}
+
+#SocialsIcon
+{
+  width: 40%;
+  display: block;
+}
+
+.NewsWrapper
+{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center; 
+
+}
+
+.Mobile_NewsWrapper
+{
+  width: 100%;
+  padding: 0;
+  margin: 0 10% 0 10%;
+  display: inline;
+  gap: 10px;
+  justify-content: center;
+  align-items: center; 
+  border: 2px white solid;
+}
+
+.NewsWrapperTitle
+{
+  display: flex;
+  text-align: center;
+  font-family: Boldonse;
+  font-size: 32px;
+  padding: 2.5% 0 0 5%;
+  margin: 0;
+}
+
+.NewsBlock
+{
+  height: 100%;
+  width: 500px;
+  text-align: left;
+  padding-bottom: 0.5%;
+  margin: 2.5% 2.5% 0 2.5%;
+  transition: transform 0.1s ease-out; 
+  overflow: hidden; 
+  box-shadow: black 8px 8px 8px;
+
+}
+
+.NewsBlock img
+{
+  width: 100%;
+  border: 3px black solid;
+}
+
+.NewsBlock:hover
+{
+  transform: scale(1.1, 1.1);
+}
+
+
+
+
+.NewsBlock h1, h3, p
+{
+  text-align: left;
+  padding: 0 5% 0 5%;
+  margin: 0;
+}
+
+.NewsBlock h1
+{
+  font-size: 24px;
+  font-family: LexendThin;
+  font-weight: 900;
+}
+
+.NewsBlock h3
+{
+  font-family: LexendThin;
+  font-weight: 500;
+}
+
+.NewsBlock p
+{
+  font-size: 12px;
+  font-family: Lexend;
+}
+
+.NewsBlock a
+{
+  color: wheat;
+}
+
+
+
+ 
+
+
+
+
+
+
+.Stats
+{
+  width: 100%;
+  height: 30vh;
+  background-color: #040404;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Stats div
+{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  height: 100%;
+}
+
+.Stats span
+{
+  font-family: "Lexend";
+}
+
+.Stats h3
+{
+  font-family: "Lexend";
+  font-weight: 200;
+  text-align: center;
+}
+
+.Stats h4
+{
+  font-size: 18px;
+  font-family: Boldonse;
+  text-transform: uppercase;
+  color: #b0001a;
+}
+
+
+.Stats a
+{
+  color: lime;
+}
+
+.Stats a:hover
+{
+  text-decoration: none;
+}
+
+.Tool-Entry
+{
+  width: 200px;
+  height: 30px;
+}
+
+.Tool-Entry img
+{
+  width: 12.5%;
+  padding: 0;
+  float: left;
+  color: white;
+  
+}
+
+.Tool-Entry h3
+{
+  display: inline;
+  padding: 0 0 0 3%;
+  margin: auto;
+  float: left;
+  width: 80%;
+  height: 100%;
+  align-self: baseline;
+  text-align: left;
+  
+}
+
+
+#GenreCard h3
+{
+  text-align: left;
+  padding: 0 0 0 30%;
+}
+
+#SocialsCard
+{
+  justify-content: center;
+  align-items: center;
+}
+
+#SocialsCard button
+{
+  margin: 2% auto 2% auto;
+}
+
+#SocialsCard a
+{
+  text-decoration: none;
+}
+
+
+
+.devclock h1
+{
+  font-size: 64px;
+  text-align: center;
+  font-family: "Geo";
+  font-weight: 450;
+}
+
+
+
+
+.socialsBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid #161616;
+  background-color: #161616;
+  box-shadow: black 5px 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.IconContainer {
+  width: 35px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: 0.3s;
+}
+
+.IconContainer img
+{
+  width: 75%;
+  padding: 10%;
+}
+
+#TwitterLogo
+{
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(12, 12, 12));
+}
+
+#BSKYLogo
+{
+  background: linear-gradient(to bottom, rgb(6, 134, 255), rgb(48, 193, 255));
+}
+
+#DiscordLogo
+{
+  background: linear-gradient(to bottom, #5865F2, #5865F2);
+}
+
+
+.Socials_text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  transition-duration: 0.3s;
+  font-size: 1.04em;
+  font-family: LexendThin;
+  font-weight: 500;
+}
+
+.socialsBtn:hover .IconContainer {
+  width: 90px;
+  transition-duration: 0.3s;
+}
+
+.socialsBtn:hover .Socials_text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: 0.3s;
+}
+
+.socialsBtn:active {
+  transform: scale(0.95);
+  transition-duration: 0.3s;
+}
+
+ 
+ 
+ 
+ .Game_Heading
+ {
+   position: absolute;
+   width: 100%;
+   text-align: center;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-family: "Nasa-Font", serif;
+   font-weight: 100;
+   font-size: 100px;
+ }
+ 
+ .Game_Subheading
+ {
+   position: absolute;
+   width: 100%;
+   text-align: center;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 20px;
+   font-family: "Lexend";
+ }
+
+
+.MobileNavBar
+{
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    transform: translateZ(0);
+    will-change: transform;
+    
+}
+
+
+
+.NavbarIcon
+{
+    height: 40px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+
+.MobileNavBar a img
+{
+    height: 100%;
+}
+
+.HamburgerMenu
+{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+    text-decoration: none;
+    color: white;
+    align-self: center;
+}
+ 
+
+
+
+
+ 
+
+ 
+
+ 

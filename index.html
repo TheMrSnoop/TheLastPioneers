@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel="icon" href="Images/SF_Icon_website.png" type="image/x-icon">
+    <title>The Last Pioneers</title>
+
+    <script>
+        function CheckForMobile() 
+        {
+            const baseHeight = window.innerHeight;
+            const baseWidth = window.innerWidth;
+
+            ratio = (Math.round((baseWidth / baseHeight) * 100)) / 100
+
+            if (ratio < 0.85)
+            {
+                let currentUrl = window.location.origin;
+                let redirectFile = "index_mobile.html";
+                window.location.href = redirectFile;
+            }
+        }
+        CheckForMobile();
+    </script>
+</head>
+<body class="Index">
+    <!-- 🥶 Hello Inspector 🥶-->
+     <ul>
+        <li class="selected"><p>
+            <a href="index.html">ABOUT</a>
+            <div class="NavBarItemUnderline"></div>
+        </p></li>
+        <li><p>
+            <a href="devlog.html">DEVLOG</a>
+            <div class="NavBarItemUnderline"></div>
+        </p></li>
+        <li>
+            <p>
+                <a href="media.html">MEDIA</a>
+                <div class="NavBarItemUnderline"></div>
+            </p>
+        </li>
+        <img src="Images/SF_Icon_website.png" alt="" width="3%" style="float: right; padding-top: 8px; padding-right: 1%; " >
+    </ul>
+    <!--buffer div--> <div class="" style="width: 100%; height: 50px; background-color: transparent;"></div>
+    <img src="Images/TLP_MACHINE.jpg" alt="" class="Index_CoverImage">  
+        
+    <div class="Keypoint_Container">
+        <div class="Keypoint_Textcontent">
+            <h1>A TACTICAL FPS</h1>
+            <p>Gameplay consists of a Singleplayer FPS with tactical elements. The player goes around various missions around places like Earth, The Moon, Mars, Venus, Europa, and Titan. In these missions, the player fights the Soviet Space Forces. Soviet enemies range from Armed Cosmonauts, to Robot Spider-bots and Self-Aware drones.</p>
+            <br>
+            <p>Select missions allow the player to pilot a combat ready Spaceplane. In these missions, the player will be shooting down similar Soviet Spaceplanes, whilst trying to complete a simple goal (like destroying a space station, or bombing a colony)</p>
+        </div>
+        <div class="Keypoint_Image">
+            <img src="Images/AR-15_Crate.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="Keypoint_Container">
+        <div class="Keypoint_Image">
+            <img src="Images/2035 MACHINE.png" alt="">
+        </div>
+        <div class="Keypoint_Textcontent">
+            <h1>HISTORICAL FICTION</h1>
+            <p>You are a Soldier in the US Space Force during the height of a new cold war. Fight a modern version of the USSR, and fight to colonize the rest of the solar system.  </p>
+            <br>
+            <p>The longer you fight, the more frequent you die. Die? How can a human being experience death as a memory? Your memories begin to become corrupted, as you slowly realize you aren’t the same person anymore. A person at all? While you try to piece together you broken memories, save the world from nuclear war. </p>
+        </div>
+    </div>
+
+    <div class="Keypoint_Container">
+        <div class="Keypoint_Textcontent">
+            <h1>AN INDIE PROJECT</h1>
+            <p>Support a solo-developer as his passion project by staying up to date with development!</p>
+        </div>
+        <div class="Keypoint_Image">
+            <img src="Images/WASP.png" alt="">
+        </div>
+    </div>
+
+    <section class="devclock">
+        <h3 style="text-align: center; font-family: Doto;">STATUS: INDEV</h3>
+        <h1 id="time-elapsed"></h1>
+        <script>
+            const startTime = new Date("2024-03-02 18:00:00");
+          
+            function padToThreeDigits(number) {
+              return number.toString().padStart(2, '0');
+            }
+           
+            function updateTimeElapsed() {
+              const now = new Date();
+              const elapsedTime = now - startTime;
+              
+              const days = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
+              const hours = Math.floor((elapsedTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              const minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+              const seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+                
+              document.getElementById("time-elapsed").textContent =
+                `${padToThreeDigits(days)} : ` +
+                `${padToThreeDigits(hours)} : ` +
+                `${padToThreeDigits(minutes)} : ` +
+                `${padToThreeDigits(seconds)}`;
+            }
+                 
+            updateTimeElapsed();
+
+            setInterval(updateTimeElapsed, 1000);
+          </script>
+          
+    </section>
+
+    
+
+
+    <div class="Stats">
+        <div id="GenreCard">
+            <h4>Genre</h4>
+            <h3>First Person Shooter</h3>
+            <h3>Singleplayer Story</h3>
+            <h3>Space</h3>
+            <h3>RPG</h3> 
+        </div>
+        <div>
+            <h4>Tools</h4>
+            <div class="Tool-Entry" style="height: 30px;">
+                <img src="Images/CompanyLogos/ue-logo-cropped.png" alt="">
+                <h3>Unreal Engine 5.5</h3>
+            </div>
+            <div class="Tool-Entry" style="height: 30px;">
+                <img src="Images/Blender_logo_no_text.svg.png" alt="">
+                <h3>Blender</h3>
+            </div>
+            <div class="Tool-Entry" style="height: 30px;">
+                <img src="Images/CompanyLogos/Gimp.png" alt="">
+                <h3>GIMP</h3>
+            </div>
+            <div class="Tool-Entry" style="height: 30px;"> 
+                <img src="Images/CompanyLogos/DavinciResolve.png" alt="">
+                <h3>DaVinci Resolve</h3>
+            </div>
+        </div>
+        <div id="SocialsCard">
+            <h4>Socials</h4>
+            <a href="https://x.com/themrsnoop"  target="_blank">
+                <button class="socialsBtn">
+                    <span class="IconContainer" id="TwitterLogo">
+                        <img src="Images/CompanyLogos/X_logo.png" alt="">
+                    </span>
+                    <p class="Socials_text" >X</p>
+                </button>
+            </a>
+            <a href="https://bsky.app/profile/themrsnoop.bsky.social"  target="_blank">
+                <button class="socialsBtn">
+                    <span class="IconContainer" id="BSKYLogo">
+                        <img src="Images/CompanyLogos/Bluesky_Logo.png" alt="">
+                    </span>
+                    <p class="Socials_text" >Bluesky</p>
+                </button>
+            </a>
+            <a href="https://discord.gg/vPwvxZrbMM" target="_blank">
+                <button class="socialsBtn">
+                    <span class="IconContainer" id="DiscordLogo">
+                        <img src="Images/CompanyLogos/DiscordLogo.png" alt="">
+                    </span>
+                    <p class="Socials_text" >Discord</p>
+                </button>
+            </a>
+        </div>
+    </div>
+    <br>
+    <br>
+    
+    <hr>
+
+    
+    <section>
+        <footer>
+            <h5 id="FooterText">GAME IS STILL IN EARLY DEVELOPMENT | NOTHING IS FINAL | d.yyyy</h5>
+            <script>
+                const footerText = document.getElementById("FooterText"); 
+                const d = new Date();
+                let currentMonth = d.getMonth() + 1;
+                let currentYear = d.getFullYear();
+    
+                footerText.textContent = "This is a passion project made by a solo developer | NOTHING IS FINAL | " + currentMonth + "." + currentYear;
+            </script> 
+        </footer>
+    </section>
+    
+</body>
+</html>
+<link rel="stylesheet" href="StyleSheets/homestyle.css">

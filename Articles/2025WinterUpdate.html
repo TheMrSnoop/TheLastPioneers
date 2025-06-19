@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/SF_Icon_website.png" type="image/x-icon">
+    <title>2025 Winter Update</title>
+    <link rel="stylesheet" href="article.css">
+    <script src="article.js"></script>
+</head>
+<body>
+    <div id="NavBarProgressBar"></div>
+    <ul id="ArticleNavbar">
+        <li><p><a href="../index.html">ABOUT</a></p></li>
+        <li><p><a href="../devlog.html">DEVLOG</a></p></li>
+    </ul>
+
+
+    <img src="../Images/Ruins.png" alt="">
+
+    <h5>The Last Pioneers Game-Dev</h5>
+    <h1>2025 Winter Update</h1>
+    <h3>MARCH 15, 2025 | TheMrSnoop</h3>
+
+    <p style="padding-top: 7%;">
+        I kinda forgot to do one of these a few weeks ago, so I'll try my best not to include any of the progress I've made since.
+    </p>
+
+    <h4>New Levels/Missions</h4>
+
+    <p>I spent a lot of these past few months remaking things I had previously created in the Fall. Mostly the Introduction/Tutorial mission. I had spent almost 3 months working on a tutorial level, just to decide it was too boring, didn't make much sense, and was horrifically unoptimized (I'll get to that later) anyways. I'm okay with that though, because like I said in a previous article, it's worth it to me if it means I get to create something better.</p>
+
+    <p>For this new Intro/Tutorial mission, I was able to get a basic introduction cutscene, backstory selector, and the basic terrain of the island laid out. Its still all green grass, I still need to add a proper landscape material, which sometimes can be a pain in the ass. </p>
+    
+    <p>Aside from the new Intro Level, I also worked a lot on an abandoned Russian City named Stellagrad. I am thinking the background lore will be something like this. <br> <i>Stellagrad was once one of the Soviet's most valuable cities. What was once just a secret launchpad turned into a famous city, symbolizing as the Soviet's head of Space exploration. It has been featured in Soviet propaganda many times. The entire city was powered by a small nuclear reactor, making it completely offgrid in the event of a Cyber Attack.</i></p>
+
+    <p>As of writing this, the map is complete with a rough nuclear reactor region, space for a will be, ruined downtown area, a ruined apartment complex, and a large destroyed steel bridge connecting some of, what once were islands.</p>
+
+    <p>When I first created the actual level, I thought it was going to be the first mission after the player completes the tutorial. While that is still not off the table, I am very much not done writing the story for the game, and so I keep shifting things around to make sense to the plot I am trying to build. So that is why, as of writing this I am thinking about actually making this level for the mid-game, and that means I would have to modify some things to make the difficultly and stuff appropriate for that.  </p>
+    <h6>Polaris Texas | February 17, 2025</h6>
+    <img src="../Images/Polaris.png" alt="" class="ArticleImage">  
+    <h6>Stellagrad Russia | March 15, 2025</h6>
+    <img src="../Images/StellgradStreet.png" alt="" class="ArticleImage">  
+
+    <h4>Adding Atmospheric Combat</h4> 
+    <p>I also had spent a good amount of time reworking the Space Combat that I made in July. I created a separate version of it, more tuned for Atmospheric Battles. The map I made at the time for it, is an Alien Ocean World called Proteus. Orbiting a Red Dwarf Star like 20 light years away from Earth. As I continue to write the story, its possible that the game only takes place in our Solar System. In which case, I will just swap the level out for an Earth Ocean, or really with any of the planned worlds with an atmosphere.</p>
+    <h6>Proteus | January 22, 2025</h6>
+    <img src="../Images/StarshipHUD.png" alt="" class="ArticleImage"> 
+
+    <h4>The First Real Playtest</h4>
+    <p>One thing I've always kind of been curious about is the performance of my game on lower-end hardware. My PC has a beast of a RX 7900 XTX in it, so performance and optimization isn't something I keep in mind often. This is why, after making the 7th Developer Build for the game, I had one of my friends try it out. His PC rocks a RTX 4060, so it was good for telling how well my game will run on more common graphics cards. An early version of the Stellagrad map wouldn't even load, the old Intro mission got about 30fps, and Proteus, well Proteus actually ran just fine at a solid 60fps, but considering its just clouds and a plane of ocean, I don't think that says much. I am aware the the engine has optimization issues of its own, but like I mentioned earlier, up until this point, I have never really worried much about the optimization of the code, and models I was making.</p>
+    <br>
+    <h4>Adding new Enemy Types</h4>
+    <p>At this point, the actual AI for the Cosmosoldier is pretty rough and basic. They are pretty easy to kill, because of how dumb they are. Despite this, I started experimenting with a new enemy type. Named The Soviet Watchdog, these guys are large, mini-tanks robots that run off of small nuclear reactors. This is still subject to change, but as of right now, to kill them, you need to first destroy the armor protecting the uranium rods, then, destroy them to make the bot go critical. Stay back, and watch the show. As of right now, I only have added their basic pathfinding AI, attack code, individual health for different components of the bot (like the rod shields), and the actual model itself.</p>
+    <h6>Watchdog Lore File</h6>
+    <img src="../Images/Watchdog.jpg" alt="" class="ArticleImage"> 
+
+    <footer>
+        <p>If you want a list of specific things I have done, check out the full <a href="../devlog.html">devlog</a></p>
+    </footer>
+
+
+</body>
+</html>

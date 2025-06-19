@@ -1,0 +1,25 @@
+{
+  "name": "thelastpioneers.net",
+  "version": "1.0.0",
+  "description": "This is a website giving information on my game \"The Last Pioneers\"\r It goes more in-depth into certain topics, and shows what I have made so far.",
+  "main": "ImageAnimations.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheMrSnoop/thelastpioneers.net.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheMrSnoop/thelastpioneers.net/issues"
+  },
+  "homepage": "https://github.com/TheMrSnoop/thelastpioneers.net#readme",
+  "dependencies": {
+    "cowsay": "^1.6.0",
+    "tweakpane": "^4.0.5",
+    "twgl.js": "github:greggman/twgl.js"
+  }
+}

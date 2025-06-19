@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    scrollbar-width: none;
+}
+
+body
+{
+    -ms-overflow-style: none;
+    background-color: #040404;
+}
+
+
+body::-webkit-scrollbar, body::-webkit-scrollbar-button
+{
+    display: none;
+}
+
+
+@font-face {
+    font-family: "Lexend";
+    src: url(../Fonts/Lexend.ttf);
+  }
+  
+  @font-face {
+    font-family: "LexendThin";
+    src: url(../Fonts/LexendThin.ttf);
+  }
+  
+  @font-face {
+    font-family: "LexendBold";
+    src: url(../Fonts/LexendBold.ttf);
+  }
+  
+  @font-face {
+    font-family: "Anurati";
+    src: url(../Fonts/Anurati-Regular.otf);
+  }
+
+@font-face {
+  font-family: Boldonse;
+  src: url(../Fonts/Boldonse-Regular.ttf);
+}
+
+@font-face {
+  font-family: Righteous;
+  src: url(../Fonts/Righteous-Regular.ttf);
+}
+
+
+
+
+
+img
+{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.ArticleImage
+{
+  width: 40%;
+  height: 20%;
+  /* margin:auto doesn't seem to work, so 100% - width(50%) = margin-left + margin-right */
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 0;
+  object-fit: cover;
+}
+
+.Mobile_Image
+{
+  width: 100%;
+  /* margin:auto doesn't seem to work, so 100% - width(50%) = margin-left + margin-right */
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+h5, h1, h3, h4, h6
+{
+    padding: 0 0 0 10%;
+    font-family: Lexend;
+    /*color: #111;*/
+    color: white;
+}
+
+h5
+{
+    font-family: Lexend;
+    font-size: 14px;
+}
+
+
+h1
+{
+    font-family: Boldonse;
+    font-size: 48px;
+}
+
+h6
+{
+  margin: 1% 0 1% 0;
+  text-align: center;
+  font-size: 18px;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: LexendThin;
+}
+
+a
+{
+  color: #b0001a;
+}
+
+p
+{
+    font-family: Lexend;
+    text-align: left;
+    margin: 0% 30% 0 30%;
+    line-height: 25px;
+    color: white;
+}
+
+.P_Mobile
+{
+  padding: 1%;
+}
+
+h4
+{
+    text-align: left;
+    font-size: 24px;
+    padding: 0 30% 0 30%;
+    text-transform: uppercase;
+    font-family: Lexend;
+}
+
+.h4_Mobile
+{
+  text-align: center;
+  font-size: 24px;
+  padding: 1%;
+  margin: 0;
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+
+}
+
+.NavBarBackgroundTransparent
+{
+  animation: HideNavbar 0.2s ease-in-out forwards;
+}
+
+.NavBarBackground
+{
+  animation: RevealNavbar 0.2s ease-in-out forwards;
+}
+  
+ul li {
+    float: left;
+    font-size: 18px;
+    font-weight: 1000;
+    padding-left: 0%;
+    padding-right: 0%;
+
+  }
+  
+ul li p
+{
+  font-size: 21px;
+  font-family: Righteous;
+  font-weight: 500;
+}
+
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    
+  }
+  
+
+li a:hover {
+    animation: ToGrey 0.1s ease-in forwards;
+
+}
+
+
+#NavBarProgressBar
+{
+  width: 0vw;
+  height: 2px;
+  background-color: white;
+  position: fixed;
+  z-index: 4;
+  float: left;
+}
+
+footer p
+{
+  text-align: center;
+}
+
+
+
+
+
+.selected
+{
+  font-weight: bold;
+}
+
+
+@keyframes RevealNavbar {
+  0%
+  {
+    background-color: transparent;
+  }
+  100%
+  {
+    background-color: #040404;
+  }
+}
+
+
+@keyframes HideNavbar {
+  0%
+  {
+    background-color: #040404;
+  }
+  100%
+  {
+    background-color: transparent;
+  }
+}
+
+
+
+.Gallery
+{
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.Gallery img
+{
+  width: 40%;
+  margin: 0;
+  padding: 1px;
+}
+
+
+iframe
+{
+  width: 40%;
+  height: 515px;
+}

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+    font-family: Boldonse;
+    src: url(../Fonts/Boldonse-Regular.ttf);
+}
+
+@font-face {
+    font-family: Righteous;
+    src: url(../Fonts/Righteous-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url(../Fonts/Lexend);
+}
+
+body, html
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: #0c0c0c;
+    color: white;
+}
+
+
+h1
+{
+    text-align: center;
+    font-family: Boldonse, sans-serif;
+    color: b0001a;
+}
+
+hr
+{
+    background-color: black;
+    border: 2px #b0001a solid;
+    width: 50%;
+}
+
+.ImageContainer
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+img
+{
+    width: 33%;
+    object-fit: cover;
+    border: 1px black solid;
+}
+
+.NoticeTextContainer
+{
+    background-color: #0c0c0c;
+    box-shadow: black 4px 4px 4px;
+    position: fixed;
+    width: 500px;
+    height: 50px;
+    bottom: 2.5%;
+    left: 50%;
+    transform: translate(-50%, -2.5%);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.NoticeTextContainer p
+{
+    margin-top: 15px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+
+}
+  
+ul li {
+    float: left;
+    font-size: 21px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: auto;
+    font-weight: 1000;
+}
+  
+
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    font-family: Righteous;
+    font-weight: 500;
+}
+  
+
+li a:hover {
+    animation: ToGrey 0.1s ease-in forwards;
+
+}
+
+.NavBarItemUnderline
+{
+  display: block;
+  width: 0%;
+  height: 1px;  
+  background-color: #b0001a;
+  transition: width 0.2s ease-in-out;
+  margin-top: 10%;
+}
+
+
+li:hover .NavBarItemUnderline
+{
+  float: left;
+  width: 100%;
+}
+
+li:not(:hover) .NavBarItemUnderline
+{
+  float: right;
+  width: 0%;
+}
+.selected
+{
+  font-weight: bold;
+}
+

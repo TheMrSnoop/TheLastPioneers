@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Lexend";
+  src: url(../Fonts/Lexend.ttf);
+}
+
+@font-face {
+  font-family: "LexendThin";
+  src: url(../Fonts/LexendThin.ttf);
+}
+
+@font-face {
+  font-family: "LexendBold";
+  src: url(../Fonts/LexendBold.ttf);
+}
+
+@font-face {
+  font-family: "NASA-Font";
+  src: url(../Fonts/NasaFont.otf);
+}
+
+@font-face {
+    font-family: "Geo";
+    src: url(../Fonts/Geo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Boldonse";
+    src: url(../Fonts/Boldonse-Regular.ttf);
+  }
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #040404;
+    color: white;
+    font-family: Lexend;
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+}
+
+hr
+{
+    height: 1px;
+    background-color: white;
+    width: 80%;
+}
+
+.FrontHead
+{
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+.FrontHead img
+{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.FrontHead h2, p
+{
+    text-align: center;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.FrontHead h2
+{
+    color: white;
+    text-align: center;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    font-family: NASA-Font;
+}
+
+.FrontHead p
+{
+    color: white;
+    text-align: center;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    font-size: 14px;
+}
+
+.Mobile_Keypoint
+{
+    width: 100%;
+    margin-bottom: 15%;
+}
+
+.Mobile_Keypoint img
+{
+    object-fit: cover;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Mobile_Keypoint h2
+{
+    text-align: center;
+    font-size: 18px;
+    font-family: Boldonse, sans-serif;
+}
+
+.Mobile_Keypoint p
+{
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 12px;
+}
+
+.MobileNavBar
+{
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    transform: translateZ(0);
+    will-change: transform;
+    
+}
+
+
+
+.NavbarIcon
+{
+    height: 40px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+
+.MobileNavBar a img
+{
+    height: 100%;
+}
+
+.HamburgerMenu
+{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+    text-decoration: none;
+    color: white;
+    align-self: center;
+}
+
+
+.Mobile_Devclock
+{
+    width: 100%;
+    border: 1px transparent solid;
+    margin-bottom: 5%;
+}
+
+.Mobile_Devclock p
+{
+    text-align: center;
+    font-size: 12px;
+}
+
+.Mobile_Devclock h1
+{
+    text-align: center;
+    font-family: Geo;
+
+}
+
+.CardTitle
+{
+    margin-left: 5%;
+}
+
+.Mobile_GenreCard
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.Mobile_GenreCard ul
+{
+    list-style-type: none;
+    font-family: Lexend;
+    font-weight: 200;
+    width: 50%;
+}
+
+
+
+.Mobile_GenreCard img
+{
+    width: 20%;
+    object-fit: contain;
+}
+
+.SocialCard
+{
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.SocialButton
+{
+    border: 1px white solid;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    box-shadow: black 3px 3px 3px;
+    width: 100px;
+    height: 50px;
+    margin-top: 2.5%;
+    margin-bottom: 15%;
+}
+
+.SocialButton img
+{
+    height: 75%;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 5px;
+}
+
+footer
+{
+    padding-bottom: 10%;
+}
+
+footer p
+{
+    font-size: 8px;
+}
