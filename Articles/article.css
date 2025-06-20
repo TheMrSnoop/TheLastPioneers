@@ -65,6 +65,14 @@ img
     object-fit: cover;
 }
 
+
+.Mobile_CoverImage
+{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
 .ArticleImage
 {
   width: 40%;
@@ -78,11 +86,12 @@ img
 
 .Mobile_Image
 {
-  width: 100%;
-  /* margin:auto doesn't seem to work, so 100% - width(50%) = margin-left + margin-right */
-  margin: 0;
-  padding: 0;
-  object-fit: cover;
+  width: 90%;
+  object-fit: contain;
+  display: block;
+  height: auto;
+  max-height: 100%;
+  margin: 5%;
 }
 
 h5, h1, h3, h4, h6
@@ -91,6 +100,16 @@ h5, h1, h3, h4, h6
     font-family: Lexend;
     /*color: #111;*/
     color: white;
+}
+
+.h3_Mobile
+{
+  padding: 0 5% 0 5%;
+  margin: 0;
+  width: 90%;
+  text-align: left;
+  font-size: 14px;
+  font-family: LexendThin;
 }
 
 h5
@@ -106,6 +125,15 @@ h1
     font-size: 48px;
 }
 
+
+.h1_Mobile
+{
+  font-size: 25px;
+  width: 90%;
+  text-align: left;
+  padding: 5%;
+}
+
 h6
 {
   margin: 1% 0 1% 0;
@@ -114,6 +142,14 @@ h6
   padding: 0;
   text-transform: uppercase;
   font-family: LexendThin;
+}
+
+.h6_Mobile
+{
+  margin: 5%;
+  text-align: left;
+  font-size: 16px;
+  padding: 0;
 }
 
 a
@@ -132,7 +168,8 @@ p
 
 .P_Mobile
 {
-  padding: 1%;
+  padding: 5%;
+  margin: 0;
 }
 
 h4
@@ -146,9 +183,9 @@ h4
 
 .h4_Mobile
 {
-  text-align: center;
+  text-align: left;
   font-size: 24px;
-  padding: 1%;
+  padding: 5%;
   margin: 0;
 }
 

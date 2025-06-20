@@ -47,11 +47,10 @@ function findRatio(numerator, denominator)
 
 function MobilizeElement(array, className)
 {
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
+    array.forEach((element, index, array) => {
         element.className = "";
         element.classList.add(className);
-    }
+    });
 }
 
 function AdjustForDisplayRatio()
@@ -59,9 +58,14 @@ function AdjustForDisplayRatio()
     const baseHeight = window.innerHeight;
     const baseWidth = window.innerWidth;
 
-    const paragraphs = document.getElementsByTagName("p");
-    const ArticlesImages = document.getElementsByClassName("ArticleImage")
-    const Heading_Fours = document.getElementsByTagName("h4");
+    const paragraphs = Array.from(document.getElementsByTagName("p"));
+    const ArticlesImages = Array.from(document.getElementsByClassName("ArticleImage"));
+    const Heading_Fours = Array.from(document.getElementsByTagName("h4"));
+    const MainHeadings = Array.from(document.getElementsByTagName("h1"));
+    const ImageHeadings = Array.from(document.getElementsByTagName("h6"));
+
+    const h3_details = Array.from(document.getElementsByTagName("h3"))
+    const h5_details = Array.from(document.getElementsByTagName("h5"));
     
     ratio = (Math.round((baseWidth / baseHeight) * 100)) / 100
 
@@ -71,7 +75,23 @@ function AdjustForDisplayRatio()
     {
         MobilizeElement(paragraphs, "P_Mobile");
         MobilizeElement(ArticlesImages, "Mobile_Image");
-        MobilizeElement(Heading_Fours, "h4_Mobile")
+        MobilizeElement(Heading_Fours, "h4_Mobile");
+        MobilizeElement(MainHeadings, "h1_Mobile");
+        MobilizeElement(h3_details, "h3_Mobile");
+        MobilizeElement(ImageHeadings, "h6_Mobile")
+
+        h5_details[0].remove();
+
+        const allImages = Array.from(document.getElementsByTagName("img"));
+
+        allImages.forEach(element => {
+            if (element.className == "")
+            {
+                element.classList.add("Mobile_CoverImage");
+            }
+        });
+
+
     }
 
 }

@@ -130,8 +130,6 @@
                 <h3>3.15.2025</h3>
                 <p>SEASONAL DEVELOPER UPDATE</p>
             </div> 
-
- 
         </div>
 
 
@@ -412,13 +410,18 @@
         document.addEventListener('DOMContentLoaded', function() {
             AdjustForDisplayRatio();
         })
-        function MobilizeElement(array, className)
+
+        
+        function MobilizeElement(array, TargetClassName)
         {
-            for (let index = 0; index < array.length; index++) {
-                const element = array[index];
-                element.className = "";
-                element.classList.add(className);
-            }
+            let OldClassName = array[0].className;
+
+            let Items = array.length;
+
+            array.forEach((element, index, array) => {
+                element.classList.remove(element.classList[0]);
+                element.classList.add(TargetClassName);
+            });
         }
 
         function AdjustForDisplayRatio()
@@ -426,8 +429,11 @@
             const baseHeight = window.innerHeight;
             const baseWidth = window.innerWidth;
 
-            const lists = document.getElementsByClassName("devlogList");
-            const NewsWrappers = document.getElementsByClassName("NewsWrapper");
+            const ListsArray = Array.from(document.getElementsByClassName("devlogList"));
+
+            const NewsWrappers = Array.from(document.getElementsByClassName("NewsWrapper"));
+
+
 
             const NormalNavBar_obj = document.getElementsByTagName("ul")[0];
             const MobileNavBar_obj = document.getElementById("MobileNavBar");
@@ -454,13 +460,15 @@
 
             
             
-            ratio = (Math.round((baseWidth / baseHeight) * 100)) / 100
+            ratio = (Math.round((baseWidth / baseHeight) * 100)) / 100;
 
-            console.log(ratio)
+            console.log(ratio);
 
             if (ratio < 0.85)
             {
-                MobilizeElement(lists, "mobile_devlogList");
+
+                MobilizeElement(ListsArray, "mobile_devlogList")
+
                 MobilizeElement(NewsWrappers, "Mobile_NewsWrapper");
                 MobileNavBar_obj.style.display = 'inline';
                 DevlogHeading.style.paddingTop = "15%";

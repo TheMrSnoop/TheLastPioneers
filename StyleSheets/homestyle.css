@@ -771,9 +771,11 @@ KeyFeaturesOL li
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: flex;
   gap: 10px;
   justify-content: center;
   align-items: center; 
+
 
 }
 
