@@ -545,8 +545,14 @@ div.scroll-container img {
 .mobile_devlogList img
 {
   width: 100%;
+  padding-top: 5%;
 }
 
+.mobile_devlogList li
+{
+  font-size: 10px;
+  font-family: Lexend;
+}
 
 .devlogList li
 {
@@ -788,7 +794,6 @@ KeyFeaturesOL li
   gap: 10px;
   justify-content: center;
   align-items: center; 
-  border: 2px white solid;
 }
 
 .NewsWrapperTitle
@@ -798,6 +803,16 @@ KeyFeaturesOL li
   font-family: Boldonse;
   font-size: 32px;
   padding: 2.5% 0 0 5%;
+  margin: 0;
+}
+
+.MobileNewsTitle
+{
+  text-align: center;
+  font-family: Lexend;
+  font-size: 18px;
+  padding: 5%;
+  width: 100%;
   margin: 0;
 }
 
@@ -814,10 +829,30 @@ KeyFeaturesOL li
 
 }
 
+.MobileNewsBlock
+{
+  height: 100%;
+  width: 500px;
+  text-align: left;
+  padding: 0;
+  margin: 0 5% 10% 5%;
+  transition: transform 0.1s ease-out; 
+  overflow: hidden; 
+  box-shadow: black 8px 8px 8px;
+}
+
 .NewsBlock img
 {
   width: 100%;
   border: 3px black solid;
+}
+
+.MobileNewsBlock img
+{
+  width: 60%;
+  border: 3px black solid;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .NewsBlock:hover
@@ -833,6 +868,32 @@ KeyFeaturesOL li
   text-align: left;
   padding: 0 5% 0 5%;
   margin: 0;
+}
+
+.MobileNewsBlock h1, h3, p
+{
+  text-align: left;
+  padding: 0 5% 0 5%;
+  margin: 0;
+}
+
+.MobileNewsBlock h1
+{
+  font-size: 18px;
+  width: 60%;
+  padding-bottom: 1%;
+}
+
+.MobileNewsBlock h3
+{
+  font-size: 16px;
+  font-family: LexendThin;
+}
+
+.MobileNewsBlock p
+{
+  font-size: 12px;
+
 }
 
 .NewsBlock h1

@@ -433,6 +433,10 @@
 
             const NewsWrappers = Array.from(document.getElementsByClassName("NewsWrapper"));
 
+            const NewsBlocks = Array.from(document.getElementsByClassName("NewsBlock"));
+
+            const MainHeading = Array.from(document.getElementsByClassName("NewsWrapperTitle"));
+
 
 
             const NormalNavBar_obj = document.getElementsByTagName("ul")[0];
@@ -468,11 +472,14 @@
             {
 
                 MobilizeElement(ListsArray, "mobile_devlogList")
-
                 MobilizeElement(NewsWrappers, "Mobile_NewsWrapper");
+                MobilizeElement(NewsBlocks, "MobileNewsBlock");
+                MobilizeElement(MainHeading, "MobileNewsTitle")
+
                 MobileNavBar_obj.style.display = 'inline';
                 DevlogHeading.style.paddingTop = "15%";
                 DevlogHeading.style.fontSize = "24px";
+
             }
             else
             {

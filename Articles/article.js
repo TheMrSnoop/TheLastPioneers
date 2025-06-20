@@ -64,8 +64,12 @@ function AdjustForDisplayRatio()
     const MainHeadings = Array.from(document.getElementsByTagName("h1"));
     const ImageHeadings = Array.from(document.getElementsByTagName("h6"));
 
-    const h3_details = Array.from(document.getElementsByTagName("h3"))
+    const h3_details = Array.from(document.getElementsByTagName("h3"));
     const h5_details = Array.from(document.getElementsByTagName("h5"));
+
+    const NavBar = Array.from(document.getElementsByTagName("ul"))[0];
+
+    //Items will convert to their mobile equivalent only when a certain ratio threshold is passed.
     
     ratio = (Math.round((baseWidth / baseHeight) * 100)) / 100
 
@@ -73,6 +77,7 @@ function AdjustForDisplayRatio()
 
     if (ratio < 0.85)
     {
+        //Applies the respective mobile class to the required elements
         MobilizeElement(paragraphs, "P_Mobile");
         MobilizeElement(ArticlesImages, "Mobile_Image");
         MobilizeElement(Heading_Fours, "h4_Mobile");
@@ -80,7 +85,12 @@ function AdjustForDisplayRatio()
         MobilizeElement(h3_details, "h3_Mobile");
         MobilizeElement(ImageHeadings, "h6_Mobile")
 
+        //Removes both the navbar and the subhead that displays the "category" of the article
         h5_details[0].remove();
+        NavBar.remove();
+
+
+        //Modifies the Cover Image to be mobile friendly.
 
         const allImages = Array.from(document.getElementsByTagName("img"));
 

@@ -114,10 +114,12 @@ hr
 
 .Mobile_Keypoint p
 {
+    width: 80%;
     text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 12px;
+    padding: 0;
 }
 
 .MobileNavBar

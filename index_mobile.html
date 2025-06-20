@@ -18,27 +18,27 @@
         </a>
     </div>
     <div class="FrontHead">
-        <img src="Images/2035 MACHINE.png" alt="">
+        <img src="Images/Titan-01.png" alt="">
         <h2 style="font-family: Lexend;">THE LAST PIONEERS</h2>
         <p>a space RPG | currently in development</p>
     </div>
     <hr>
-    <div class="Mobile_Keypoint">
+    <div class="Mobile_Keypoint" style="margin-bottom: 30%;">
         <h2>TACTICAL FPS</h2>
         <img src="Images/AR-15_Crate.jpg" alt="">
-        <p>The main gameplay will consist of traversing the Solar System to complete various missions tied to a single campaign.</p>
+        <p>Gameplay consists of a Singleplayer FPS with tactical elements. The player goes around various missions around places like Earth, The Moon, Mars, Venus, Europa, and Titan. In these missions, the player fights the Soviet Space Forces. Soviet enemies range from Armed Cosmonauts, to Robot Spider-bots and Self-Aware drones.</p>
     </div>
     <hr>
-    <div class="Mobile_Keypoint"  style="margin-bottom: 15%;">
+    <div class="Mobile_Keypoint"  style="margin-bottom: 20%;">
         <h2>HISTORICAL FICTION</h2>
-        <img src="Images/The Last Pioneer Sketch COMPRESSED.jpg" alt="">
-        <p>You are a soldier in the Space Force during the height of the new Cold War. A grand scale nuclear and space war is on the verge of starting. Fight for freedom, and take revenge on those who committed genocide on humanity.</p>
+        <img src="Images/2035 MACHINE.png" alt="">
+        <p>You are a Soldier in the US Space Force during the height of a new cold war. Fight a modern version of the USSR, and fight to colonize the rest of the solar system.</p>
     </div>
     <hr>
     <div class="Mobile_Keypoint">
-        <h2>THE FINAL FRONTIER</h2>
-        <img src="Images/Earth_1440p.png" alt="">
-        <p>Spread Democracy around the final frontier. Fight battles on the Moon, Mars, Earth, Venus, Titan and Europa.</p>
+        <h2>AN INDIE PROJECT</h2>
+        <img src="Images/WASP.png" alt="">
+        <p>Support a solo-developer as his passion project by staying up to date with development!</p>
     </div>
     <div class="Mobile_Devclock">
         <p>Time Since Development Started</p>
@@ -59,7 +59,7 @@
     <div class="Mobile_GenreCard">
         <img src="Images/Helmet01_NASA.png" alt="">
         <ul>
-            <li>Unreal Engine 5.5</li>
+            <li>Unreal Engine 5.6</li>
             <li>Blender</li>
             <li>GIMP</li>
         </ul>
@@ -79,7 +79,15 @@
     </div>
     <hr style="margin-top: 25%;">
     <footer>
-        <p id="FooterText">This is a passion project made by a solo developer | NOTHING IS FINAL | 4.2025</p>
+        <p id="FooterText">GAME IS STILL IN EARLY DEVELOPMENT | NOTHING IS FINAL | d.yyyy</p>
+            <script>
+                const footerText = document.getElementById("FooterText"); 
+                const d = new Date();
+                let currentMonth = d.getMonth() + 1;
+                let currentYear = d.getFullYear();
+    
+                footerText.textContent = "This is a passion project made by a solo developer | NOTHING IS FINAL | " + currentMonth + "." + currentYear;
+            </script> 
     </footer>
 </body>
 </html>
